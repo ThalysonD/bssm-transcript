@@ -5,7 +5,7 @@ function formatText() {
         .replace(/\d+\n\d{2}:\d{2}:\d{2}\.\d{3} --> \d{2}:\d{2}:\d{2}\.\d{3}\n/g, "")
         .replace(/\d+\n/g, "")
         .replace(/\d{2}:\d{2}:\d{2}\.\d{3}\n/g, "")
-        .replace(/\n\s*\n/g, "\n\n");
+        .replace(/\n\s*\n/g, " ")
 
     const blob = new Blob([processedText], { type: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document' });
     const fileName = 'transcricao.docx';
